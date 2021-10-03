@@ -1,0 +1,400 @@
+html{
+    height: 100%;
+
+}
+body{
+    font-family: sans-serif;
+    margin : 0;
+    padding: 0;
+    height: 100%;
+    background-image: url(images/background-02-port.png); 
+}
+
+.body-home{
+  background-image: url(images/background-01-land.png);  
+  background-position: center;
+  background-attachment:fixed;
+  background-repeat: no-repeat;
+  background-size: cover; 
+
+}
+
+
+.body-meals{
+    background-image: url(images/background-02-port.png);  
+    background-position: center;
+    background-attachment:fixed;
+    background-repeat: no-repeat;
+    background-size: cover; 
+  
+  }
+
+
+  #h3{
+    font-weight: bold;
+    font-size: 20px;
+    color: WHITE ;
+    padding-left: 10px;
+}
+  
+/*=====================hearder====================*/
+.header {
+    background-color: #6b4c08;
+    width: 100%;
+    height: 65px;
+    top: 0;
+    position: fixed;
+    overflow: hidden;
+    text-align: center;
+
+}
+
+.header i{
+    float:left;
+    padding: 17px 0 0 17px;
+    color: #ffffff;
+    
+}
+
+
+.hearder img{
+    width: 150px;
+    padding-right: 25px;
+    padding-left:10px;
+
+}
+
+/*=============================================home===============================*/
+#home-logo-img {
+    width: 50px;
+    display: block;
+    margin: auto;
+    padding :25px 10px 10px 10px;
+    
+}
+
+#home-logo-text {
+    width: 25%;
+    display: block;
+    margin: auto;
+    padding :5px;
+
+    
+    
+}
+
+
+/*=====homeMenu===========*/
+.home-menu-item {
+text-decoration: none;
+text-transform: uppercase;
+
+color :rgb(243, 227, 227);
+font-size: 25px;
+font-weight: bold;
+text-align: center;
+background: linear-gradient(to left, #dbbd58 0%, #382b01 100%);
+display: block;
+margin: auto;
+margin-bottom: 10px;
+width: 80%;
+}
+
+
+/*=====================================page meals============================================*/
+#meals {
+    padding-top:50px;
+}
+
+/*================Home meals menu===========================*/
+.meal-list a{
+    text-decoration: none;
+}
+
+.meal-list-items {
+    border: 5px solid #1a1a1a;
+    margin: 20px;
+
+}
+
+
+.meal-list-items h1 {
+    font-weight: bold;
+    font-size: 20px;
+    color: #1a1a1a ;
+    padding-left: 10px;
+}
+
+
+.meal-list-items i{
+    float:right;
+    color:#1a1a1a;
+    padding:20px;
+}
+
+
+.meal-list-items p{
+    font-style: italic;
+    font-size: 15px;
+    color: #4d4d4d;
+    margin-top: -7px;
+    padding-left: 10px;
+}
+
+/*===============Order==================*/
+
+.order {
+    padding-top:50px; 
+    text-decoration: none;
+}
+
+
+.order p{
+    text-decoration: none;
+    font-weight: bold;
+    font-size:50px;
+    color: rgb(34, 31, 6) ;
+    text-align: center;
+}
+
+
+.order img{
+    
+    margin: 15px;
+    padding-left: 33%;
+
+}
+
+
+/*===============recipe==================*/
+#recipe {
+    padding-top: 50px;
+}
+/*===============recipe details==========================*/
+
+.recipe-details img{
+    width:100%;
+
+}
+
+.recipe-details h1{
+    font-size: 25px;
+    text-align: center;
+    border:7px solid #1a1a1a;
+    
+    
+}
+
+
+.recipe-details h2{
+    font-size: 20px;
+    text-align: left;
+    margin:0 ;
+    margin-left: 10px;
+}
+
+
+
+
+.recipe-details-info {
+    margin-left: 25px;
+    margin-right:25px ;
+
+}
+
+
+.recipe-details-info p{
+    font-size: 20px;
+    display: inline-block;
+  
+}
+
+.recipe-details-ingredients label{
+    line-height: 25px;
+    margin-left: 10px;
+}
+
+.recipe-details-ingredients a{
+    text-decoration: none; 
+    color :rgb(36, 33, 33);
+}
+
+.recipe-details-ingredients img{
+    border: 5px solid #1a1a1a;
+    margin: 20px;
+
+}
+
+.recipe-details-ingredients h3{
+    margin-left: 50px;
+    margin: 2%;
+    padding: 1px;
+  
+
+
+   
+
+}
+
+
+.recipe-details-steps {
+    padding-top: 20px;
+}
+
+
+.recipe-details-steps ol{
+    padding-left: 28px;
+}
+
+
+/*================================responsive layout==============================*/
+@media only screen and(min-width:600px) {
+    #meals {
+        width: 80%;
+        margin:auto;
+    }
+
+    #recipe {
+        width: 80%;
+        margin:auto;
+    }
+}
+
+@media only screen and(min-width:1000px) {
+    #meals {
+        width: 60%;
+        margin:auto;
+    }
+
+    #recipe {
+        width: 60%;
+        margin:auto;
+    }
+}
+
+@media only screen and(min-width:1500px) {
+    #meals {
+        width: 40%;
+        margin:auto;
+    }
+
+    #recipe {
+        width: 40%;
+        margin:auto;
+    }
+}
+
+
+@media only screen and(min-width:720px) {
+    .body-home {
+        background-image: url('image/background-01-land.png');  
+    }
+
+    .body-meals {
+        background-image: url('image/background-02-land.png');  
+    }
+}
+
+
+/*==========================Card===========================================*/
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+  }
+  
+  
+  .card button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color:  #6b4c08;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+  }
+  
+  .card button:hover {
+    opacity: 0.7;
+  }
+
+
+  /*=======*/
+  .sidepanel  {
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    height: 194px;
+    top: 0;
+    left: 0;
+    background-color: rgba(17, 17, 17, 0.404);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 30px;
+  }
+  
+  .sidepanel a {
+    padding: 4px 9px 8px 32px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #524709ec;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidepanel a:hover {
+    color: #f1f1f1;
+  }
+  
+
+  
+  .openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color:#382b01;
+    text-align: center;
+    color: white;
+    padding: 10px 5px;
+    border: none;
+  }
+  
+  .openbtn:hover {
+    background-color:#444;
+  }
+
+
+  /*==================================contact page =============================================*/
+
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;  
+    border: 1px solid #ccc;
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical 
+  }
+  
+  input[type=submit] {
+    background-color: #6b4c08;
+    color: rgb(26, 22, 22);
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #96b3a3;
+  }
+  
+  .container {
+    border-radius: 5px;
+    background-color: #6b4c088a;
+    padding: 20px;
+  }
